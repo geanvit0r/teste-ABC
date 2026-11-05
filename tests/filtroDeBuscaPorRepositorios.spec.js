@@ -19,6 +19,8 @@ test('Pesquisar repositório por parte do nome', async ({ page }) => {
     await repositoriosPage.pesquisarRepositorio('AnimacaoUn');
     await repositoriosPage.validarMensagemSucesso();
     await repositoriosPage.validarRepositorioVisivel('AnimacaoUnit');
+    await repositoriosPage.validarNomeRepositorio('AnimacaoUnit');
+
 });
 
 test('Pesquisar por repositório inexistente', async ({ page }) => {

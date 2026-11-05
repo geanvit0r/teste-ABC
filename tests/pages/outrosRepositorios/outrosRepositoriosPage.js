@@ -9,7 +9,7 @@ export default class OutrosRepositoriosPage {
 
         // Elementos da página
         this.campoNome = page.locator("[name='Result.Name']");
-        this.botaoPesquisar = page.locator("[type='submit']");
+        this.botaoBuscar = page.locator("[type='submit']");
 
         // Mensagens
         this.mensagemSucesso = page.getByText('×OK');
@@ -38,14 +38,14 @@ export default class OutrosRepositoriosPage {
     }
 
     // Clicar no botão Pesquisar
-    async clicarBotaoPesquisar() {
-        await this.botaoPesquisar.click();
+    async clicarBotaoBuscar() {
+        await this.botaoBuscar.click();
     }
 
     // Realizar pesquisa de repositório
     async pesquisarRepositorio(nome) {
         await this.preencherCampoNome(nome);
-        await this.clicarBotaoPesquisar();
+        await this.clicarBotaoBuscar();
     }
 
     // Validar mensagem de sucesso
