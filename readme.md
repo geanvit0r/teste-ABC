@@ -65,7 +65,7 @@ A automação foi realizada para a função de filtro na tela de Outros Reposit�
 - Pesquisar por repositório inexistente
 - Pesquisar por repositório sem preencher o campo Nome
 
-Foi utilzado o modelo de Page Objects, com o objetivo de reutilização de código, manutenção de código facilitada, bem como a entrega de um código limpo.
+Foi utilzado o modelo de Page Objects, com o objetivo de reutilização de código, manutenção facilitada, bem como a entrega de um código limpo.
 
 ## Autor
 
